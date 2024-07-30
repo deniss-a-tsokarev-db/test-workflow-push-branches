@@ -1,6 +1,8 @@
 # test-workflow-push-branches
 Testing workflow triggers on push to "!main"
 
+## Workflows
+
 ### [test_wf_a.yaml](./.github/workflows/test_wf_a.yaml)
 ```yaml
 on:
@@ -17,3 +19,11 @@ on:
       - "**"
       - "!main"
 ```
+
+## Tests
+|                                  | Workflow A | Workflow B |
+|----------------------------------|------------|------------|
+| Doesn't trigger on `main` branch |            |            |
+| Triggers on other branches       |            |            |
+
+✔️ / ❌
